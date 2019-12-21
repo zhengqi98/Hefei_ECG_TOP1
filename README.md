@@ -29,7 +29,7 @@ https://tianchi.aliyun.com/competition/entrance/231754/introduction
 </p>
 
 ### 模型构建
-针对多导联心电图分类任务，我创新地提出一种网络结构，将其称之为ECGNet: Multi-scale ResNet for Multi-lead ECG Data。该模型是本次比赛的**致胜关键**。（细节可见PPT）
+针对多导联心电图分类任务，我创新地提出一种网络结构，将其称之为**ECGNet: Multi-scale ResNet for Multi-lead ECG Data**。该模型是本次比赛的**致胜关键**。（细节可见PPT）
 <p align="center">
   <img src="image/ECGNet.png">
 </p>
