@@ -23,7 +23,7 @@ https://tianchi.aliyun.com/competition/entrance/231754/introduction
   <img src="image/8lead1.png">
 </p>
 
-- 不同导联十分相似：将不同导联画在同一坐标轴上，可看出相似性。如何构建模型以利用这种相似性是**最为关键的思路**。
+- 不同导联十分相似：将不同导联画在同一坐标轴上，可看出**相似性**。如何构建模型以利用这种**相似性**是**最为关键**的思路。
 <p align="center">
   <img src="image/8lead2.png">
 </p>
