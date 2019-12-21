@@ -18,7 +18,7 @@ https://tianchi.aliyun.com/competition/entrance/231754/introduction
   <img src="image/corr.png">
 </p>
 
-- 不同导联节拍一致：波峰波谷位置一致。
+- 不同导联节拍一致：尖峰位置一致。
 <p align="center">
   <img src="image/8lead1.png">
 </p>
@@ -29,7 +29,7 @@ https://tianchi.aliyun.com/competition/entrance/231754/introduction
 </p>
 
 ### 模型构建
-针对多导联心电图分类任务，我创新地提出一种网络结构，将其称之为ECGNet: Multi-scale ResNet for Multi-lead ECG Data。可以说该模型是本次比赛的**致胜关键**。（细节见PPT）
+针对多导联心电图分类任务，我创新地提出一种网络结构，将其称之为ECGNet: Multi-scale ResNet for Multi-lead ECG Data。该模型是本次比赛的**致胜关键**。（细节可见PPT）
 <p align="center">
   <img src="image/ECGNet.png">
 </p>
@@ -39,7 +39,7 @@ https://tianchi.aliyun.com/competition/entrance/231754/introduction
   <img src="image/stacking.png">
 </p>
 
-模型融合阶段效果提升有两点原因：
+模型融合阶段效果提升，我认为主要有两点原因：
   1. 充分利用初赛和复赛的数据
   2. “隐含”地利用了不同标签的相关性 
   
@@ -54,6 +54,18 @@ https://tianchi.aliyun.com/competition/entrance/231754/introduction
 <p align="center">
   <img src="image/eval.png">
 </p>
+
+### 经验总结
+- 充分利用提供的数据很重要，尤其分布差异很大时。
+- 多去思考多去尝试。
+
+在处理多导联心电图数据时： 
+- 对不同导联应用相同的卷积核，能在减小参数量的同时，很好地提升模型的效果。
+- 采用多尺度网络能捕捉不同尺度的特征，较好地提升模型的效果。
+- 网络初期可以采用较大的卷积核，后期可以采用较小的卷积核。
+- BN-ReLU-Conv要优于Conv-BN-ReLU。
+- Squeeze-and-excitation结构也能提升模型的效果。
+- 传统特征也很重要。
 
 ### 失败尝试
 以下是一些失败的尝试（不代表这些方法真的不行，也许是我的打开方式有问题）：
@@ -71,11 +83,12 @@ https://tianchi.aliyun.com/competition/entrance/231754/introduction
 总之还是要多思考多去尝试吧，没有什么事能一帆风顺的。
 
 ### 赛后感想
-本次比赛收获颇丰，除了实质性奖励以外，还锻炼了我赛题思考、数据分析、模型构建、论文阅读、编程实现以及答辩的能力，也与其他选手交流了一些优秀的想法。  
-客观上来看，本次比赛有很大的运气成分的，自己还是很菜，还是需要不断努力，再接再厉吧。
+本次比赛收获颇丰，除了实质性奖励以外，还锻炼了我赛题思考、数据分析、模型构建、论文阅读、编程实现以及答辩的能力，且与其他选手交流了一些有趣的思路。  
+客观上来看，本次比赛有很大的运气成分的，自己还有很多不足。总之，继续努力，再接再厉吧。  
+~~单人参赛好累啊，还有复现阶段需要抓紧时间，我差点没在期限内整出来。~~
 
 ### PS
-很多细节我没有详细介绍，有兴趣地可以看PPT或答辩视频
+很多细节我没有详细介绍，有兴趣地可以看PPT或答辩视频。
 
 ### 答辩视频
 //TODO
