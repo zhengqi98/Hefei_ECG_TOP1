@@ -18,18 +18,18 @@ https://tianchi.aliyun.com/competition/entrance/231754/introduction
   <img src="image/corr.png">
 </p>
 
-- 不同导联节拍一致：波峰波谷位置一致
+- 不同导联节拍一致：波峰波谷位置一致。
 <p align="center">
   <img src="image/8lead1.png">
 </p>
 
-- 不同导联十分相似：将不同导联画在同一坐标轴上，可看出相似性
+- 不同导联十分相似：将不同导联画在同一坐标轴上，可看出相似性。如何构建模型以利用这种相似性是**最为关键的思路**。
 <p align="center">
   <img src="image/8lead2.png">
 </p>
 
 ### 模型构建
-针对多导联心电图分类任务，我创新地提出一种网络结构，将其称之为ECGNet: Multi-scale ResNet for Multi-lead ECG Data。可以说该模型是本次比赛的**致胜关键**。
+针对多导联心电图分类任务，我创新地提出一种网络结构，将其称之为ECGNet: Multi-scale ResNet for Multi-lead ECG Data。可以说该模型是本次比赛的**致胜关键**。（细节见PPT）
 <p align="center">
   <img src="image/ECGNet.png">
 </p>
