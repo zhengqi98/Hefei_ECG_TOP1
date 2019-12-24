@@ -91,4 +91,4 @@ https://tianchi.aliyun.com/competition/entrance/231754/introduction
 很多细节我没有详细介绍，有兴趣地可以看PPT或答辩视频。
 
 ### 答辩视频
-//TODO
+https://tianchi.aliyun.com/course/video?liveId=41127
